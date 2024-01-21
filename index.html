@@ -35,7 +35,7 @@
         <li class="hideOnMobile"><a href="#">About</a></li>
         <li class="hideOnMobile"><a href="#">Contact</a></li>
         <li class="hideOnMobile"><a href="#">Login</a></li>
-        <li class="" onclick="showSidebar()">
+        <li class="menu-button" onclick="showSidebar()">
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,16 @@
         </li>
       </ul>
     </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
 
-    <script src="script.js"></script>
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>

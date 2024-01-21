@@ -71,4 +71,7 @@ nav li:first-child {
 }
 
 @media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
 }

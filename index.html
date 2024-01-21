@@ -23,7 +23,7 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Login</a></li>
-        <li onclick="">
+        <li onclick="showSideBar()">
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,5 +38,11 @@
         </li>
       </ul>
     </nav>
+    <script>
+      function showSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+    </script>
   </body>
 </html>
